@@ -1,4 +1,5 @@
 <?php
+require_once 'logic/connexiondb.php';
 $title = 'Accueil';
 require_once 'component/header.php';
 ?>
