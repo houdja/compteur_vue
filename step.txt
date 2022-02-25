@@ -1,0 +1,8 @@
+créer la page d'accueil
+connexion à la base de donnée
+creation de la function pour incrementer le compteur de vue
+creation de la page admin avec le nombre de vue total
+formulaire de connexion
+gerer la connexion
+deconnexion
+(voir le nombre de vue selon le mois selectioné)
