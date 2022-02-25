@@ -4,5 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "overpass", "Courier New", Courier, monospace;
+  font-family: "overpass", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
