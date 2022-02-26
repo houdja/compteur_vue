@@ -1,24 +1,32 @@
 <?php
+session_start();
+require_once '../logic/connexiondb.php';
+require_once '../logic/authentification.php';
 require_once '../component/header.php';
 ?>
 <section class="section">
     <div class="container">
-        <form class='form'>
+        <form class='form' method='POST'>
             <h2>Connexion</h2>
-            <div class="input">
-                <input type="text" placeholder="Identifiant">
+            <div class="input <?= $error ? 'input_error' : '' ?>">
+                <input type="text" name="login" placeholder="Identifiant">
                 <span class="material-icons">
                     person
                 </span>
             </div>
-            <div class="input">
-                <input type="password" placeholder="Mot de passe">
-                <span class="material-icons" minlength="4" maxlength="8">
+            <div class="input <?= $error ? 'input_error' : '' ?>">
+                <input type="password" name="password" placeholder="Mot de passe">
+                <span class="material-icons">
                     lock_open
                 </span>
             </div>
-            <small>Une erreur est survenue. Veuillez rééssayer.</small>
-            <button class='button'>
+            <?php if ($success) : ?>
+                <small class='success'><?= $success ?></small>
+            <?php endif ?>
+            <?php if ($error) : ?>
+                <small class='error'><?= $error ?></small>
+            <?php endif ?>
+            <button class='button' name='submit'>
                 <p>Se connecter</p>
                 <span class="material-icons">
                     login
