@@ -22,7 +22,7 @@ nav {
 }
 nav,
 footer {
-  background-color: royalblue;
+  background-color: #0d0d0d;
   display: flex;
   align-items: center;
 }
@@ -47,8 +47,10 @@ nav h1 {
 .pic {
   width: 100%;
   background-color: silver;
-  height: 300px;
-  border-radius: 5px;
+  background-image: url(../img/pic.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
 }
 .descr_text {
   text-align: center;
