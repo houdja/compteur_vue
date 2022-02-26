@@ -7,11 +7,18 @@ body {
   font-family: "overpass", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
-  font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+h1 {
+  font-size: 40px;
 }
 .container {
   width: 80%;
@@ -63,4 +70,69 @@ footer {
 footer p {
   color: silver;
   font-size: 14px;
+}
+
+/* PAGE CONNEXION */
+
+.section {
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+.section .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  height: 50vh;
+  width: 400px;
+  padding: 20px 30px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.form h2 {
+  text-transform: uppercase;
+}
+.form input,
+.form input::placeholder,
+.form button {
+  font-family: "overpass", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+}
+.input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid silver;
+  position: relative;
+}
+.input span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.input input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  outline: none;
+}
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #0d0d0d;
+  color: silver;
+  border: none;
+  cursor: pointer;
+}
+.button p {
+  text-transform: uppercase;
+  padding-right: 20px;
 }
