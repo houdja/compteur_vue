@@ -1,7 +1,5 @@
 <?php
-require_once 'logic/MyPdo.php';
-$db = new MyPdo();
-$db->connexionDb();
+require_once 'logic/connexiondb.php';
 $title = 'Accueil';
 require_once 'component/header.php';
 ?>
