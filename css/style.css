@@ -102,6 +102,15 @@ footer p {
 .form button {
   font-family: "overpass", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
+.form .error {
+  color: #ff5252;
+}
+.form .success {
+  color: #009030;
+}
+.form .input_error {
+  border: 1px solid #ff5252;
+}
 .input {
   width: 100%;
   height: 40px;
@@ -126,7 +135,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 50px;
   background-color: #0d0d0d;
   color: silver;
   border: none;
