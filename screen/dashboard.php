@@ -5,7 +5,7 @@ if ($_SESSION['role'] != 'admin') {
 }
 require_once '../component/header.php';
 ?>
-<section class="section">
+<section class="section dasboard">
     <div class="container">
         <p>Bienvenue <?= $_SESSION['login'] ?></p>
     </div>
