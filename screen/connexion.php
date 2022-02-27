@@ -1,12 +1,15 @@
 <?php
 session_start();
+if (isset($_SESSION['role']) && $_SESSION['role'] === "admin") {
+    header("location:http://localhost/compteur_vue/screen/dashboard.php");
+}
 require_once '../logic/connexiondb.php';
 require_once '../logic/authentification.php';
 require_once '../component/header.php';
 ?>
 <section class="section">
     <div class="container">
-        <form class='form' method='POST'>
+        <form class='form <?= $success ? "loading" : '' ?>' method='POST'>
             <h2>Connexion</h2>
             <div class="input <?= $error ? 'input_error' : '' ?>">
                 <input type="text" name="login" placeholder="Identifiant">
