@@ -282,8 +282,8 @@ footer p {
 .dasboard .vertical_nav {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 150px);
-  margin: 50px 0;
+  height: calc(100vh - 300px);
+  margin: 150px 0;
   width: 60px;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -319,18 +319,20 @@ footer p {
   align-self: flex-end;
 }
 .dasboard .all_vues {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 300px);
   margin: 50px 0 50px 50px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .all_vues h1 {
   color: #ffffff;
   border-bottom: 1px dashed #ffffff;
+  margin-bottom: 150px;
 }
 .all_vues .nbr_vue {
-  font-size: 60px;
-  color: #009030;
+  font-size: 100px;
+  color: #ffffff;
 }
