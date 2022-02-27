@@ -276,6 +276,61 @@ footer p {
   border: 1px dashed silver;
 }
 /* DASHBOARD */
-.dasboard {
+.dasboard .container {
+  justify-content: space-between;
+}
+.dasboard .vertical_nav {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 150px);
+  margin: 50px 0;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.vertical_nav a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: silver;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  border: 1px dashed silver;
+  position: relative;
+}
+
+.vertical_nav a:hover::after {
+  content: attr(data-descrp);
+  position: absolute;
+  top: 0%;
+  left: calc(100% + 10px);
+  background-color: silver;
+  color: #0d0d0d;
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.vertical_nav a:not(:last-child) {
+  margin-bottom: 15px;
+}
+.vertical_nav .logout {
+  align-self: flex-end;
+}
+.dasboard .all_vues {
+  height: calc(100vh - 150px);
+  margin: 50px 0 50px 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.all_vues h1 {
   color: #ffffff;
+  border-bottom: 1px dashed #ffffff;
+}
+.all_vues .nbr_vue {
+  font-size: 60px;
+  color: #009030;
 }
