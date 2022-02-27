@@ -1,6 +1,6 @@
 <?php
-require_once 'logic/connexiondb.php';
-require_once 'logic/updateVue.php';
+require_once 'logic/authentification/connexiondb.php';
+require_once 'logic/vues/updateVue.php';
 $title = 'Accueil';
 require_once 'component/header.php';
 ?>

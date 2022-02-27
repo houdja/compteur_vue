@@ -3,8 +3,8 @@ session_start();
 if (isset($_SESSION['role']) && $_SESSION['role'] === "admin") {
     header("location:http://localhost/compteur_vue/screen/dashboard.php");
 }
-require_once '../logic/connexiondb.php';
-require_once '../logic/authentification.php';
+require_once '../logic/authentification/connexiondb.php';
+require_once '../logic/authentification/authentification.php';
 require_once '../component/header.php';
 ?>
 <section class="section">
