@@ -1,7 +1,7 @@
 <?php
 session_start();
-if ($_SESSION['role'] != 'admin') {
-    header("http://localhost/compteur_vue/screen/connexion.php");
+if (isset($_SESSION['role']) && $_SESSION['role'] != "admin" || empty($_SESSION)) {
+    header("location:http://localhost/compteur_vue/screen/connexion.php");
 }
 require_once '../component/header.php';
 ?>
