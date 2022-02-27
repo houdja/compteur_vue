@@ -13,11 +13,18 @@ require_once '../component/header.php';
 <section class="section dasboard">
     <div class="container">
         <div class="vertical_nav">
-            <a href="#" data-descrp='Vues'>
-                <span class="material-icons">
-                    visibility
-                </span>
-            </a>
+            <div class="top">
+                <a href="http://localhost/compteur_vue/screen/dashboard.php" data-descrp='Tableau de bord'>
+                    <span class="material-icons">
+                        home
+                    </span>
+                </a>
+                <a href="#" data-descrp='Détails des vues'>
+                    <span class="material-icons">
+                        calendar_month
+                    </span>
+                </a>
+            </div>
             <a href="http://localhost/compteur_vue/screen/dashboard.php?<?php echo 'logout' ?>" class='logout' data-descrp='Déconnexion'>
                 <span class="material-icons">
                     logout
