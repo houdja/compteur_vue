@@ -21,6 +21,7 @@ $months = [
     '12' => 'Décembre',
 ];
 require_once '../logic/authentification/connexiondb.php';
+require_once '../logic/vues/vue_per_date.php';
 require_once '../component/header.php';
 ?>
 <section class="section details_vue">
@@ -29,8 +30,12 @@ require_once '../component/header.php';
         <div class="stats">
             <div class="display-vue">
                 <h1>Selectioné une date</h1>
-                <p>Pour l'année 2020 au mois de Février</p>
-                <div class="vue">40</div>
+                <p><?= isset($_GET['annee']) ? 'Pour l\'année ' . $_GET['annee'] : '' ?> <?= isset($_GET['mois']) ? 'au mois de  ' . $months[$_GET['mois']] : '' ?></p>
+
+                <?php if (isset($_GET['annee'])) : ?>
+                    <div class="vue"><?= isset($vues) && $vues['vues']  > 0 && $vues != null ? $vues['vues'] : '0' ?></div>
+                <?php endif; ?>
+
             </div>
             <div class="contain-date">
                 <div class="dates">
