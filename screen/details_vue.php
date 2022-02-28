@@ -33,7 +33,7 @@ require_once '../component/header.php';
                 <p><?= isset($_GET['annee']) ? 'Pour l\'année ' . $_GET['annee'] : '' ?> <?= isset($_GET['mois']) ? 'au mois de  ' . $months[$_GET['mois']] : '' ?></p>
 
                 <?php if (isset($_GET['annee'])) : ?>
-                    <div class="vue"><?= isset($vues) && $vues['vues']  > 0 && $vues != null ? $vues['vues'] : '0' ?></div>
+                    <div class="vue"><?= isset($vues) && $vues['vues']  > 0 && $vues != null ? $vues['vues'] . ' vues' : 'aucune vue' ?></div>
                 <?php endif; ?>
 
             </div>
